@@ -1,0 +1,7 @@
+ubuntu_precise:
+  provider: aws-east-private-ips
+  image: ami-d0f89fb9
+  size: Micro Instance
+  ssh_username: ubuntu
+  minion:
+    master: salt.jumpbox.net

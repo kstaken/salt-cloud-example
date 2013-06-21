@@ -1,0 +1,6 @@
+.DS_Store
+env.sh
+.vagrant
+salt/kstaken*
+salt/cloud
+salt/roots/pillar/aws_credentials.sls
