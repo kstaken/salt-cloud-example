@@ -3,7 +3,7 @@ providers:
     # Set up the location of the salt master
     #
     minion:
-      master: salt.jumpbox.net
+      master: {{ pillar['salt_master_hostname'] }}
 
     # Specify whether to use public or private IP for deploy script.
     #
