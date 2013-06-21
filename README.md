@@ -1,4 +1,3 @@
-=======
 salt-cloud-example
 ==================
 Example using vagrant and Salt Stack to provision a multi-tier node.js/mongodb application in EC2
