@@ -20,8 +20,8 @@ providers:
 
     # Make sure this key is owned by root with permissions 0400.
     #
-    private_key: /vagrant/salt/kstaken-dev.pem
-    keyname: kstaken-dev
+    private_key: {{ pillar['AWS_SSH_PRIVKEY'] }}
+    keyname: {{ pillar['AWS_KEYPAIR_NAME'] }}
     securitygroup: default
 
     # Optionally configure default region
