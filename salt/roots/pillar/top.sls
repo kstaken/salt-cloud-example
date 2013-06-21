@@ -1,4 +1,4 @@
 base:
   '*':
-    - aws_credentials
+    - aws-credentials
     - salt-config
