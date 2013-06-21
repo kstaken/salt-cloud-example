@@ -24,6 +24,8 @@ service salt-minion restart
 
 route53 change_record ${AWS_ROUTE53_DOMAIN} ${SALT_MASTER_HOSTNAME} A `curl --silent http://169.254.169.254/latest/meta-data/public-ipv4`  30
 
+# Salt should be up and running so everything else can come from highstate
+salt 'salt-master' state.highstate
 
 chown root ${AWS_SSH_PRIVKEY}
 chmod 400 ${AWS_SSH_PRIVKEY}
