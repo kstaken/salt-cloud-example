@@ -10,6 +10,14 @@ salt-cloud:
     - group: root
     - mode: '0400'
 
+/etc/salt/cloud.map:
+  file.managed:
+    - source: salt://salt-cloud/cloud.map
+    - user: root
+    - group: root
+    - mode: 644
+    - template: jinja
+    
 /etc/salt/cloud.profiles:
   file.managed:
     - source: salt://salt-cloud/cloud.profiles
