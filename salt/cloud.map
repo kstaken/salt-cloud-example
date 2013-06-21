@@ -1,5 +1,0 @@
-ubuntu_precise:
-    - node1
-    - node2
-    - balancer
-    - mongo1
