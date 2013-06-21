@@ -1,5 +1,5 @@
 nginx:
-  package:
-    - installed
-  service:
-    - running
+	package:
+		- installed
+	service:
+		- running

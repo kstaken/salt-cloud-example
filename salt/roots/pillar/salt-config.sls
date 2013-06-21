@@ -1,0 +1,1 @@
+salt_master_hostname: salt.jumpbox.net
