@@ -6,4 +6,4 @@ mongodb-replica:
   require:
     - mongodb
   sls:
-    - mongodb-replica.sls
+    - mongodb-replica
