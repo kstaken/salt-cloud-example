@@ -5,3 +5,6 @@ ubuntu_precise:
   ssh_username: ubuntu
   minion:
     master: salt.jumpbox.net
+    mine_functions:
+        network.ip_addrs:
+            - eth0
